@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+  <title>TITLE FOR FEED</title>
+  <link href="https://www.URLOFWEBSITE.com/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="URLOFWEBSITE/" rel="alternate" type="text/html"/>
+  <updated>2023-10-21T14:17:12.448116Z</updated>
+  <author>
+    <name>Jane Doe</name>
+  </author>
+  <id>https://www.URLOFWEBSITE.com/feed.xml</id>
+
+  
+</feed>

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: charter;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('../assets/fonts/charter_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: charter;
+    font-style: italic;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('../assets/fonts/charter_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: charter;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+src: url('../assets/fonts/charter_bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: charter;
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('../assets/fonts/charter_bold_italic.woff2') format('woff2');
+}
+
+body {
+    margin:40px auto;
+    max-width: 27em;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #222;
+    font-family: charter, monospace, georgia, serif;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+#flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#fiction, #articles {
+    width: 50%;
+}
+
+#postamble p, #preamble p {
+    font-size: 90%;
+    text-indent: 0;
+    margin: 0;
+}
+
+#postamble {
+    padding: 0.2em;
+}
+
+hr {
+    border: none;
+    height: 2em;
+    margin: 0;
+}
+
+/* hr:before {
+    content: '＊＊＊';
+    display: block;
+    text-align: center;
+} */
+
+a {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6622CC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+p {
+    text-indent: 2em;
+    margin: 0;
+}
+
+p:first-of-type, hr + p {
+    text-indent: 0;
+}
+
+@media (max-width: 700px) {
+    #doc {
+	margin: 0 min(1.2rem);
+    }
+}
+

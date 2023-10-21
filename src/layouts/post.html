@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <style>
+    h1, h2, h3 {
+	text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="{{ style }}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="doc">
+    {{ body }}
+    <div id="postamble">
+      <p>Author: {{ author }}</p>
+      <p>Published: {{ pubDate }}</p>
+    </div>
+  </div>
+</body>
+</html>

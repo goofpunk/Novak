@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="{{ style }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="doc">
+      <h1>My Homepage</h1>
+      <p>This is a brief description of the site, the kinds of things that get posted, perhaps some links to other places I could be found. There is a feed for this website <a href="feed.xml">here</a>.</p>
+      <div id="flexbox">
+	<div id="fiction">
+	  <h2>Stories</h2>
+	  <ul>
+	    {% for article in stories_dict %}
+	    <li><a href="{{ stories_dict[article]['relativeLocation'] }}">{{ stories_dict[article]['title'] }}</a></li>
+	    {% endfor %}
+	  </ul>
+	</div>
+	<div id="articles">
+	  <h2>Essays</h2>
+	  <ul>
+	    {% for article in essays_dict %}
+	    <li><a href="{{ essays_dict[article]['relativeLocation'] }}">{{ essays_dict[article]['title'] }}</a></li>
+	    {% endfor %}
+	  </ul>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

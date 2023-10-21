@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+  <title>TITLE FOR FEED</title>
+  <link href="https://www.URLOFWEBSITE.com/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="URLOFWEBSITE/" rel="alternate" type="text/html"/>
+  <updated>{{ lastUpdated }}</updated>
+  <author>
+    <name>Jane Doe</name>
+  </author>
+  <id>https://www.URLOFWEBSITE.com/feed.xml</id>
+
+  {% for article in articlesDictionary %}
+  <entry>
+    <title>{{ articlesDictionary[article]['title'] }}</title>
+    <link href="{{ articlesDictionary[article]['permalink'] }}"/>
+    <id>{{ articlesDictionary[article]['permalink'] }}</id>
+    <updated>{{ articlesDictionary[article]['atomDate'] }}</updated>
+    <content type="html">{{ articlesDictionary[article]['content'] }}</content>
+  </entry>
+  {% endfor %}
+</feed>
