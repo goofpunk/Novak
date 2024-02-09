@@ -1,5 +1,5 @@
 # Novak
-Novak is a small static site generator, which I had intended to use to make a site for sharing essays and short stories outside of the traditional blog format. I ended up abandoning that project, but a fork of Novak was used to create my actual website, [Chekhov's Pun](https://chekhovspun.com). You can see a preview of Novak's defaults [here](http://chekhovspun.com/novak-demo/)
+Novak is a small static site generator, which I had intended to use to make a site for sharing essays and short stories outside of the traditional blog format.
 
 The default style and layout is very influenced by Matthew Butterick's [Practical Typography](https://practicaltypography.com), as well as Drew McConville's [Better Motherfucking Website](http://bettermotherfuckingwebsite.com), but it supports customization by creating Jinja2 templates and putting them in the `layouts` directory, and including them in your article's metadata.
 
